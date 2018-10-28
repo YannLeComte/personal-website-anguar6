@@ -37,38 +37,23 @@
   z-index: 8;
 }
 
+.experience-list-component p {
+  color: white;
+}
+
 .experience-list-component .subtitle {
   margin-top: 0;
   font-size: 23px;
   color: white;
 }
 
-.experience-list-component p {
-  color: white;
-}
-
 .experience-list-component .inner-cell {
-  animation-name: slideInFromLeft2;
+  animation-name: slideInFromBot;
   animation-delay: 0s;
   animation-duration: 2s;
   animation-timing-function: ease;
 
   display: none;
-}
-
-
-/* Animations keyframes */
-@media screen and (min-width: 1025px) {
-  @keyframes slideInFromLeft2 {
-    0% {
-      transform: translate(-50%, 0%);
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
-  }
 }
 
 @media screen and (max-width: 1025px) {
