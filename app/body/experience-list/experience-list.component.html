@@ -1,0 +1,18 @@
+<div class="experience-list-component" id="experience">
+  <mat-grid-list [cols]="screenSize >= 1024 ? 2 : 1" rowHeight="fit" gutterSize="0px">
+    <mat-grid-tile class="cell" *ngFor="let experience of experienceList; let i = index" class="left-align primary" (mouseover)="fctMouseOver($event, i)" (mouseout)="fctMouseOut($event, i)">
+      <img src={{experience.img}} [ngStyle]="{'transform': indexCurrentImage == i ? 'translate(' + x + 'px, ' + y + 'px) scale('+ scale +')' : 'translate(0px, 0px) scale(1)'}">
+      <a href={{experience.link}} target="_blank">
+        <div class="grid-cell">
+          <div class="inner-cell">
+            <h3>{{experience.company}}</h3>
+            <p class="subtitle">{{experience.location}}</p>
+            <div class="top-line"></div>
+            <p>{{experience.date}}</p>
+            <p><span *ngFor="let skill of experience.skills; let i = index">{{skill}}, </span></p>
+          </div>
+        </div>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

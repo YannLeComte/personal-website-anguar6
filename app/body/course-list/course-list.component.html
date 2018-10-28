@@ -1,0 +1,16 @@
+<div class="course-list-component">
+  <div>
+    <mat-grid-list cols="2" rowHeight="fit" gutterSize="0px">
+      <mat-grid-tile  *ngFor="let course of courses; let i = index" class="left-align primary">
+        <div class="grid-cell">
+          <div class="inner-cell">
+            <div>
+              <i class="fas {{course.icon}}"></i>
+            </div>
+            <p>{{course.name}}</p>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

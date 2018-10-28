@@ -1,0 +1,37 @@
+.course-list-component .text-container {
+  padding: 20px;
+}
+
+.course-list-component p {
+  text-align: center;
+  color: white;
+}
+
+.course-list-component .grid-cell i {
+  font-size: 70px;
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+
+@media screen and (max-width: 1023px) and (orientation: landscape){
+  .course-list-component .grid-cell i {
+    font-size: 40px;
+  }
+}
+
+.course-list-component .grid-cell:hover i, .course-list-component .grid-cell:hover p {
+  color: #303133;
+}
+.course-list-component .grid-cell {
+  background-color: #303133;
+}
+.course-list-component .grid-cell:hover {
+  background-color: #fff;
+}
+
+.course-list-component mat-grid-list {
+  height: 100vh;
+}
+

@@ -1,0 +1,24 @@
+<div class="training-component" id="training">
+  <!-- <h2 class="primary">Mes études</h2> -->
+  <div *ngFor="let training of trainingList; let i = index; let odd=odd;" [class.row-odd]="odd" [class.row-even]="!odd">
+    <div class="right-col text-col" [ngClass]="{'hidden': !odd || screenSize < 1023}">
+      <app-course-list [courses]="training.courses" [screenSize]="screenSize"></app-course-list>
+    </div>
+    <div class="left-col">
+      <div class="img-col" (mouseover)="fctMouseOver($event, i)" (mouseout)="fctMouseOut($event, i)">
+        <div class="img-container">
+          <img src={{training.img}} [ngStyle]="{'transform': indexCurrentImage == i ? 'translate(' + x + 'px, ' + y + 'px) scale('+ scale +')' : 'translate(0px, 0px) scale(1)'}">
+          <div class="filter deep-dark" [class.full]="odd" [class.half]="!odd"></div>
+        </div>
+        <div class="text-container">
+          <i class="material-icons primary">school</i>
+          <h3>{{training.diploma}}</h3>
+          <p class="subtitle">{{training.university}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-col text-col" [ngClass]="{'hidden': odd && screenSize > 1023}">
+      <app-course-list [courses]="training.courses"></app-course-list>
+    </div>
+  </div>
+</div>

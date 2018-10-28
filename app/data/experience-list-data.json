@@ -1,0 +1,34 @@
+[
+  {
+    "company": "Interact.io",
+    "location": "Berlin, Allemagne",
+    "date": "Janvier 2018 - Juillet 2018",
+    "img": "/assets/img/leadscore.PNG",
+    "skills": ["AngularJS", "Material design", "HTML5", "CSS3", "Javascript"],
+    "link": "https://www.leadscore.io/"
+  },
+  {
+    "company": "GoCambio",
+    "location": "Youghal, Irlande",
+    "date": "Avril 2015 - Juin 2016",
+    "img": "/assets/img/tutorsassociation.PNG",
+    "skills": ["Wordpress", "PHP", "HTML5", "CSS3", "Javascript"],
+    "link": "https://tutorsassociation.org/"
+  },
+  {
+    "company": "GoCambio",
+    "location": "Youghal, Irlande",
+    "date": "Novembre 2015 - Avril 2016",
+    "img": "/assets/img/premiereinternshipireland.PNG",
+    "skills": ["Wordpress", "PHP", "HTML5", "CSS3", "Javascript"],
+    "link": "https://premierinternshipsireland.com/"
+  },
+  {
+    "company": "Ulster University",
+    "location": "Derry, Irlande du Nord",
+    "date": "Avril 2015 - Juin 2016",
+    "img": "/assets/img/circuitwarz.PNG",
+    "skills": ["Unity4/5", "C#", "Oculus rift", "Leap motion"],
+    "link": "http://www.circuitwarz.com/"
+  }
+]

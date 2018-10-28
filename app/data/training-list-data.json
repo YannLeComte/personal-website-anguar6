@@ -1,0 +1,94 @@
+[
+  {
+    "diploma": "Master MIASHS",
+    "university": "Université Grenoble Alpes",
+    "date": "2016 - 2018",
+    "img": "/assets/img/grenoblemin.jpg",
+    "courses": [
+      {
+        "name": "Programmation Objet Avancé",
+        "icon": "fa-laptop-code"
+      },
+      {
+        "name": "Intelligence artificiel",
+        "icon": "fa-brain"
+      },
+      {
+        "name": "Psychologie cognitive",
+        "icon": "fa-cogs"
+      },
+      {
+        "name": "Gestion de projet",
+        "icon": "fa-chart-line"
+      },
+      {
+        "name": "Interaface Homme Machine",
+        "icon": "fa-object-group"
+      },
+      {
+        "name": "Programmation web",
+        "icon": "fa-window-restore"
+      }
+    ]
+  },
+  {
+    "diploma": "DUETI - Bsc",
+    "university": "Institute Technology Tralee",
+    "date": "2015 - 2016",
+    "img": "/assets/img/ireland_min.jpg",
+    "courses": [
+      {
+        "name": "Base de donnée",
+        "icon": "fa-database"
+      },
+      {
+        "name": "Programmation web",
+        "icon": "fa-window-restore"
+      },
+      {
+        "name": "Réseau",
+        "icon": "fa-wifi"
+      },
+      {
+        "name": "Programmation Orienté Object",
+        "icon": "fa-laptop-code"
+      },
+      {
+        "name": "Test logiciel",
+        "icon": "fa-desktop"
+      }
+    ]
+  },
+  {
+    "diploma": "DUT",
+    "university": "IUT de Lannion",
+    "date": "2013 - 2015",
+    "img": "/assets/img/bretagnemin.jpg",
+    "courses": [
+      {
+        "name": "Architecture logiciel",
+        "icon": "fa-sitemap"
+      },
+      {
+        "name": "Système d'information",
+        "icon": "fa-cloud"
+      },
+      {
+        "name": "Base de donnée",
+        "icon": "fa-database"
+      },
+      {
+        "name": "Programmation logiciel",
+        "icon": "fa-laptop-code"
+      },
+      {
+        "name": "Programmation web",
+        "icon": "fa-window-restore"
+      },
+      {
+        "name": "Réseau",
+        "icon": "fa-wifi"
+      }
+    ]
+  }
+]

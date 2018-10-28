@@ -1,0 +1,17 @@
+<div class="top-nav-component">
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" position="end">
+      <p (click)="scroll('training')">Etudes</p>
+      <p (click)="scroll('experience')">Expériences</p>
+      <a href="https://www.linkedin.com/in/yann-le-comte-50864296/" target="_blank" class="no-style">
+        <p>LinkedIn</p>
+      </a>
+      <a href="assets/doc/cv.pdf" target="_blank" class="no-style">
+        <p>Mon CV</p>
+      </a>
+    </mat-sidenav>
+    <button type="button" mat-button (click)="sidenav.toggle()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </mat-sidenav-container>
+</div>

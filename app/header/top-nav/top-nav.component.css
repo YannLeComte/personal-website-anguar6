@@ -1,0 +1,33 @@
+.top-nav-component {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.top-nav-component .mat-drawer-container {
+  background-color: #fafafa29;
+  color: #303133;
+  overflow: initial;
+}
+
+.top-nav-component button {
+  float: right;
+}
+
+.top-nav-component i {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.top-nav-component p {
+  padding: 20px;
+  font-weight: 500;
+  font-family: 'Roboto Slab';
+  cursor: pointer;
+}
+
+.top-nav-component mat-sidenav {
+  height: 100vh;
+  background-color: #ffffffe0;
+}

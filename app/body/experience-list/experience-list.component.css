@@ -1,0 +1,102 @@
+.experience-list-component mat-grid-list {
+  height: 100vh;
+}
+.experience-list-component img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  transition: transform 1s;
+}
+
+.experience-list-component .grid-cell {
+  width: 100%;
+  height: 100%;
+  background-color: #5d5d5dbf;
+  z-index: 5;
+  border: 0;
+  margin: 0;
+}
+.experience-list-component .grid-cell:hover {
+  background-color: #424242c9;
+}
+
+.experience-list-component .grid-cell:hover .inner-cell {
+  display: initial;
+}
+
+.experience-list-component h3{
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.experience-list-component a{
+  display:block;
+  width: 100%;
+  height:100%;
+  z-index: 8;
+}
+
+.experience-list-component .subtitle {
+  margin-top: 0;
+  font-size: 23px;
+  color: white;
+}
+
+.experience-list-component p {
+  color: white;
+}
+
+.experience-list-component .inner-cell {
+  animation-name: slideInFromLeft2;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+  display: none;
+}
+
+
+/* Animations keyframes */
+@media screen and (min-width: 1025px) {
+  @keyframes slideInFromLeft2 {
+    0% {
+      transform: translate(-50%, 0%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .experience-list-component .inner-cell {
+    display: initial;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .experience-list-component img {
+    width: auto;
+    position: absolute;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+  .experience-list-component mat-grid-list {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  .experience-list-component mat-grid-list {
+    height: 400vh;
+  }
+  .experience-list-component img {
+    width: 100%;
+    height: 100%;
+  }
+}

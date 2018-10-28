@@ -1,0 +1,104 @@
+.training-component .material-icons {
+  font-size: 200px;
+  display: block;
+  text-align: center;
+}
+
+.training-component p, .training-component h3{
+  text-align: center;
+}
+
+.training-component .subtitle {
+  margin-top: 0;
+  font-size: 23px;
+}
+
+.training-component h3{
+  font-size: 40px;
+  margin: 0;
+}
+
+.training-component .text-col {
+  background-color: #303133;;
+}
+
+.training-component .text-container {
+  padding: 40px;
+}
+
+.training-component .img-col {
+  height: 100vh;
+}
+
+.training-component .img-col .text-container {
+  padding-top: 20%;
+  animation-name: slideInFromLeft;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.training-component .img-col p, .training-component .img-col i, .training-component .img-col h3{
+  color: white;
+}
+
+.training-component .img-container {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.training-component .right-col, .training-component .left-col{
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  height: 100vh;
+}
+
+.training-component .img-container img {
+  animation-name: appearBlur;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}
+
+.training-component .img-container img {
+  transition: transform 1s;
+}
+
+.training-component .row-even .img-container img {
+  width: 50%;
+}
+
+.training-component .row-odd .img-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  .training-component .img-col .text-container {
+    padding-top: 0!important;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .training-component .right-col, .training-component .left-col{
+    width: 50%;
+  }
+  .training-component .row-even .img-container img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1023px), screen and (max-width: 1025px) and (orientation: portrait) {
+  .training-component .right-col, .training-component .left-col{
+    width: 100%;
+  }
+  .training-component .img-container img {
+    width: 100%!important;
+    transform: scale(2.1)!important;
+  }
+  .filter.half {
+    width: 100%;
+  }
+}

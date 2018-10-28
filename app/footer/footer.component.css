@@ -1,0 +1,22 @@
+footer mat-grid-list {
+  height: 50px;
+}
+
+footer p {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .no-mobile {
+    display: none;
+  }
+}

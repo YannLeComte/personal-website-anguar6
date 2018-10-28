@@ -1,0 +1,68 @@
+.hero-img-component {
+  height: 100vh;
+}
+
+.hero-img-container {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero-img-container .hero-img {
+  width: 100%;
+  animation-name: appearBlur;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}
+
+.hero-img-component .text-container {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  color: white;
+  width: 50%;
+  left: 5%;
+  animation-name: slideInFromLeft;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero-img-component .text-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+  .hero-img-container .hero-img {
+    height: 100%;
+    width:auto;
+  }
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  .hero-img-container .hero-img {
+    width: 100%;
+  }
+}
+
+
+/* Fonts */
+.hero-img-component .text-container h1 {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.hero-img-component .text-container h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-align:left;
+}

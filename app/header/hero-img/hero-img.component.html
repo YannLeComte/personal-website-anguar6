@@ -1,0 +1,13 @@
+<div class="hero-img-component">
+  <div class="hero-img-container">
+    <img class="hero-img" [src]="imagesource" (load)="imageLoaded()" [class.hidden]="!isImageLoaded">
+    <div class="filter dark full"></div>
+  </div>
+  <div class="text-container" [class.hidden]="!isImageLoaded">
+    <div class="top-line"></div>
+    <h1>Yann Le Comte</h1>
+    <h2>Développeur Web</h2>
+    <div class="bot-line"></div>
+  </div>
+  <mat-progress-spinner mode="indeterminate" [class.hidden]="isImageLoaded"></mat-progress-spinner>
+</div>
