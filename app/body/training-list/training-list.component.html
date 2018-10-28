@@ -1,5 +1,4 @@
 <div class="training-component" id="training">
-  <!-- <h2 class="primary">Mes études</h2> -->
   <div *ngFor="let training of trainingList; let i = index; let odd=odd;" [class.row-odd]="odd" [class.row-even]="!odd">
     <div class="right-col text-col" [ngClass]="{'hidden': !odd || screenSize < 1023}">
       <app-course-list [courses]="training.courses" [screenSize]="screenSize"></app-course-list>

@@ -1,8 +1,6 @@
 <div class="main-component" (window:resize)="onResize($event)">
-  <app-header [bodyE]="body"></app-header>
-  <div #body>
-    <app-body [screenSize]="screenSize"></app-body>
-  </div>
+  <app-header></app-header>
+  <app-body [screenSize]="screenSize"></app-body>
   <app-footer></app-footer>
 </div>
 

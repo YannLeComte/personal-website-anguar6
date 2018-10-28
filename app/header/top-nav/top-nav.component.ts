@@ -6,12 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./top-nav.component.css']
 })
 export class TopNavComponent implements OnInit {
-  @Input() body: any;
   constructor() { }
 
   ngOnInit() {
   }
 
+  /* scroll to the wanted element, triggered when clicking in a menu item */
   scroll(e) {
     document.getElementById(e).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }

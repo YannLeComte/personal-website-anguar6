@@ -8,6 +8,8 @@ import { Component, ViewEncapsulation} from '@angular/core';
 })
 export class AppComponent {
   title = 'Yann Le Comte';
+
+  /* On resize, send screenSize to the children, used to reorganise the grid setup */
   public screenSize: number;
 
   constructor() {

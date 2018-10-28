@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroImgComponent implements OnInit {
   imagesource: string;
+
+  /* paramater used for lazy loading */
   isImageLoaded: boolean;
 
   constructor() {

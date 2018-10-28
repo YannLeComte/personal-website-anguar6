@@ -6,10 +6,8 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() bodyE: any;
   constructor() { }
 
   ngOnInit() {
   }
-
 }

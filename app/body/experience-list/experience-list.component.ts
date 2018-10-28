@@ -22,6 +22,7 @@ export class ExperienceListComponent extends AnimatedBackground implements OnIni
   ngOnInit() {
   }
 
+  /* Init the experience list with a given json */
   jsonToExperienceList(jsonContent) {
     for (let experience of  jsonContent) {
       let experienceI: ExperienceInterface = {

@@ -24,6 +24,7 @@ export class TrainingListComponent extends AnimatedBackground implements OnInit 
   ngOnInit() {
   }
 
+  /* Init the training list with a given JSON */
   JsonToTrainingList(jsonContent): void {
     for (let training of  jsonContent) {
       let trainingI: TrainingInterface = {
@@ -37,6 +38,7 @@ export class TrainingListComponent extends AnimatedBackground implements OnInit 
     }
   }
 
+  /* get a course element, with a given object */
   getCourses(coursesArray): CourseInterface[] {
     let courseList = [];
     for (let course of  coursesArray) {
